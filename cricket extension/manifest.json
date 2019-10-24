@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Crickbuzz Shortcut",
+    "description": "Now you can keep live track of the score of cricket matches!!",
+    "version": "1.1",
+    "icons": {
+      "128": "icon128.png",
+      "64": "icon64.png",
+      "16": "icon16.png"
+    },
+
+    "browser_action":{
+      "default_icon":"icon16.png",
+      "default_popup":"popup.html"
+    },
+    "background":{
+       "scripts":["jquery.js","background.js"]
+    },
+    "permissions": [
+      "https://www.cricbuzz.com/*"
+    ]
+  }
