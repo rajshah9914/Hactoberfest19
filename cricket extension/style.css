@@ -1,0 +1,18 @@
+img{
+    display:none;
+}
+#mpu{
+  display:none;  
+}
+#latest-vid-mod{
+  display:none;
+}
+#top{
+  display:none;
+}
+#FooterWraper{
+    display:none;
+}
+body{
+    background:black;
+}
