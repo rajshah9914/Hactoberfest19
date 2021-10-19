@@ -1,13 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-again:
-    cout << "Enter the data to be sent\n";
-    string s;
-    cin >> s;
-    int flag = 0;
+bool validate(string s){
     for (int i = 0; i < s.length(); i++)
     {
         if (s[i] == '0' || s[i] == '1')
@@ -17,10 +11,19 @@ again:
         else
         {
             cout << "Please enter a binary data.\n";
-            flag = 1;
-            break;
+            return 1;
         }
     }
+    return 0;
+}
+
+int main()
+{
+again:
+    cout << "Enter the data to be sent\n";
+    string s;
+    cin >> s;
+    bool flag = validate(s);
     if (flag)
         goto again;
 
